@@ -203,3 +203,21 @@ background: var(--red);
         font-size: 20vw;
     }
 }
+/* Ajustes específicos para dispositivos iPhone */
+@media only screen and (max-device-width: 414px) and (orientation: portrait) {
+    .main {
+        padding: 15px;
+    }
+    .header {
+        padding: 10px;
+    }
+    .content {
+        margin-top: 15px;
+    }
+    .footer {
+        padding: 10px;
+    }
+    .main::before {
+        font-size: 15vw;
+    }
+}
