@@ -169,3 +169,37 @@ background: var(--red);
     font-weight: 400;
     font-style: italic;
 }
+/* Estilos para tamaños específicos de pantalla */
+@media only screen and (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+    .header {
+        padding: 15px;
+    }
+    .content {
+        margin-top: 30px;
+    }
+    .footer {
+        padding: 15px;
+    }
+}
+
+/* Estilos para tamaños aún más pequeños, como smartphones */
+@media only screen and (max-width: 480px) {
+    .main {
+        padding: 10px;
+    }
+    .header {
+        padding: 10px;
+    }
+    .content {
+        margin-top: 20px;
+    }
+    .footer {
+        padding: 10px;
+    }
+    .main::before {
+        font-size: 20vw;
+    }
+}
