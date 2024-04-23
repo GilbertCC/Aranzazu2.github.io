@@ -221,3 +221,19 @@ background: var(--red);
         font-size: 15vw;
     }
 }
+/* Estilos para tamaños específicos de pantalla */
+@media only screen and (max-width: 768px) {
+    .slider .slides {
+        padding: 0 20px; /* Reducir el padding en dispositivos móviles */
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .slider {
+        max-width: 100%; /* Asegurar que el slider no ocupe toda la pantalla */
+        overflow: hidden; /* Evitar el desbordamiento horizontal en dispositivos móviles */
+    }
+    .slider .slides {
+        padding: 0 10px; /* Reducir el padding en dispositivos móviles */
+    }
+}
