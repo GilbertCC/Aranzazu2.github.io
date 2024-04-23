@@ -17,7 +17,7 @@
 .main{
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(#1c1c1c,#323232);
+    background: linear-gradient(#ffffff,#979797);
     padding: 30px 100px;
     display: flex;
     justify-content: center;
@@ -25,14 +25,14 @@
     flex-direction: column;
 }
 .main::before{
-    content: 'Aránzazu';
+    content: 'Vinagre Blanco';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 16vw;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(26, 26, 26, 0.05);
 }
 header{
     position: absolute;
@@ -55,11 +55,112 @@ header{
 }
 .navigation li a{
     position: relative;
-    color: var(--white);
+    color: black;
     margin-left: 40px;
     text-decoration: none;
     transition: 0.5s;
 }
 .navigation li a:hover{
     color: var(--blue);
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    z-index: 1;
+}
+.content h2{
+    font-size: 3em;
+    font-weight: 300;
+    color: var(--orange);
+}
+.content h2 span{
+    font-weight: 700;
+}
+.content img{
+    height: 800px;
+    
+
+}
+.btn{
+    display: inline-block;
+    background-color: var(--red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 16px 36px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 1.25em;
+    transition: 0.25s;
+}
+.btn:hover{
+    letter-spacing: 4px;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sci{
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    color: var(--red);
+    font-size: 2em;
+    margin-right: 20px;
+    transition: 0.25s;
+}
+.sci li a:hover{
+    color: var(--blue);
+}
+.dots{
+    display: flex;
+}
+.dots .dot{
+    width: 10px;
+    height: 10px;
+    background: rgba(29, 29, 29, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.dots .dot.active{
+background: var(--red);
+}
+.slider .slides{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    transition: 0.25s;
+    opacity: 0;
+    pointer-events: none;
+}
+.slider .slides.active{
+    opacity: 1;
+}
+.slider .slides h2{
+    color: var(--red);
+    font-size: 3em;
+}
+.slider .slides h2 span{
+    color: var(--blue);
+    font-size: 0.5em;
+    font-weight: 400;
+    font-size: italic;
 }
